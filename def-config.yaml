@@ -1,0 +1,44 @@
+server:
+  port: 3033
+  xkill-9:
+    xpid: 1234
+    xmaster-pass: 3920192
+  skins:
+    "":
+      local-path: client/
+    confort:
+      local-path: node_modules/backend-skins/dist/
+    confort-bis:
+      local-path: node_modules/backend-skins/dist/confort-bis
+db:
+  motor: postgresql
+  host: localhost
+  database: events_db
+  schema: events
+  user: events_user
+  password: eventpass1234
+login:
+  table: users
+  userFieldName: username
+  passFieldName: md5pass
+  rolFieldName: rol
+  infoFieldList: [username, rol]
+  activeClausule: current_timestamp<=active_until
+  lockedClausule: current_timestamp>=locked_since
+  plus:
+    allowHttpLogin: true
+    chPassUrlPath: false
+    fileStore: true
+    secret: secret cat in the table
+    loginForm:
+      formTitle: Event tables
+      formImg: unlogged/tables-lock.png
+    x-loginPagePath: false
+client-setup:
+  cursors: true
+  skin: ""
+  formTitle: example-tables
+  menu: true
+  title: event table
+logo: 
+  path: client/img

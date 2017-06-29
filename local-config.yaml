@@ -1,0 +1,20 @@
+db:
+  port: 5435
+server:
+  port: 3036
+  base-url: /events
+  skins:
+    confort:
+      local-path: ../backend-skins/dist/
+    confort-bis:
+      local-path: ../backend-skins/dist/
+    confort-dark:
+      local-path: ../backend-skins/dist/
+    confort-beige:
+      local-path: ../backend-skins/dist/
+log: 
+  req: true
+  serve-content: true
+client-setup:
+  cursors: true
+  skin: ""

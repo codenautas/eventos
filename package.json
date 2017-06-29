@@ -1,0 +1,13 @@
+{
+  "name": "events-plus",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server/server-events.js",
+    "dump-db": "node server/server-events.js --dump-db"
+  },
+  "dependencies": {
+    "backend-plus": "~0.13.0",
+    "backend-skins": "~0.1.0",
+    "type-store": "~0.1.5"
+  }
+}
